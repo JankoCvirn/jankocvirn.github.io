@@ -36,4 +36,4 @@ Then open http://localhost:8000/. Use a server rather than `file://`, because `4
 
 - Contact details are intentionally limited to "Zagreb area, Croatia", email and profile links. Don't add back a street address or phone number.
 - There's no contact form, because GitHub Pages can't run server-side code.
-- An open TODO in `index.html`: the Search Console / Bing verification meta tags.
+- An open TODO in `index.html`: the Bing Webmaster Tools verification meta tag. Keep the `google-site-verification` tag, or Search Console loses ownership.
