@@ -1,393 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>DevFolio Bootstrap Portfolio Template - Index</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <title>Janko Cvirn – Senior Android Developer | Jetpack Compose &amp; Kotlin Freelancer</title>
+    <meta name="description" content="Janko Cvirn is a freelance senior Android developer in Zagreb, Croatia: Jetpack Compose, Kotlin, Android TV and Automotive apps, Compose migrations and AI-assisted development.">
+    <meta name="author" content="Janko Cvirn">
+    <link rel="canonical" href="https://jankocvirn.github.io/">
+    <!-- TODO: paste the Google Search Console / Bing verification meta tags here -->
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <meta name="theme-color" content="#f6f8f7" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0e1412" media="(prefers-color-scheme: dark)">
+    <meta name="color-scheme" content="light dark">
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Open Graph / social previews -->
+    <meta property="og:type" content="profile">
+    <meta property="og:site_name" content="Janko Cvirn">
+    <meta property="og:title" content="Janko Cvirn – Senior Android Developer">
+    <meta property="og:description" content="Freelance Android developer: Jetpack Compose, Kotlin, Android TV &amp; Automotive, Compose migrations and AI-assisted development.">
+    <meta property="og:url" content="https://jankocvirn.github.io/">
+    <meta property="og:image" content="https://jankocvirn.github.io/assets/img/me.jpeg">
+    <meta property="og:image:alt" content="Portrait of Janko Cvirn">
+    <meta property="profile:first_name" content="Janko">
+    <meta property="profile:last_name" content="Cvirn">
+    <meta name="twitter:card" content="summary">
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link rel="icon" href="assets/img/favicon.png">
+    <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
 
-    <!-- =======================================================
-    * Template Name: DevFolio
-    * Updated: Nov 17 2023 with Bootstrap v5.3.2
-    * Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
+    <!-- Apply the saved theme before first paint to avoid a flash -->
+    <script>
+        try {
+            const t = localStorage.getItem('theme');
+            if (t) document.documentElement.dataset.theme = t;
+        } catch (e) {}
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Person",
+                "@id": "https://jankocvirn.github.io/#person",
+                "name": "Janko Cvirn",
+                "jobTitle": "Senior Android Developer",
+                "url": "https://jankocvirn.github.io/",
+                "image": "https://jankocvirn.github.io/assets/img/me.jpeg",
+                "email": "mailto:jankocvirn@gmail.com",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Zagreb",
+                    "addressCountry": "HR"
+                },
+                "knowsAbout": [
+                    "Android development", "Jetpack Compose", "Kotlin", "Kotlin Coroutines", "Kotlin Flow",
+                    "Kotlin Multiplatform", "Material 3", "Android TV", "Android Automotive OS",
+                    "Clean Architecture", "MVVM", "MVI", "Room", "Ktor", "Retrofit", "Koin", "Hilt",
+                    "Unit testing", "UI testing", "Google Play Console", "Claude Code", "AI-assisted development"
+                ],
+                "sameAs": [
+                    "https://github.com/JankoCvirn",
+                    "https://www.linkedin.com/in/janko-cvirn-b8bb3b31/"
+                ]
+            },
+            {
+                "@type": "ProfessionalService",
+                "name": "Janko Cvirn – Android Development",
+                "url": "https://jankocvirn.github.io/",
+                "founder": { "@id": "https://jankocvirn.github.io/#person" },
+                "areaServed": "Worldwide",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Zagreb",
+                    "addressCountry": "HR"
+                },
+                "serviceType": [
+                    "Android app development", "Android TV app development", "Android Automotive app development",
+                    "Jetpack Compose migration", "Android debugging and code audits", "Android consulting",
+                    "Google Play publishing"
+                ]
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- ======= Header ======= -->
-<header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+<header class="site-header">
+    <div class="container header-inner">
+        <a class="logo" href="#top">Janko Cvirn</a>
 
-        <h1 class="logo"><a href="index.html">Janko Cvirn</a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-        <nav id="navbar" class="navbar">
-            <ul>
-                <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                <li><a class="nav-link scrollto" href="#about">About</a></li>
-                <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <nav class="site-nav" aria-label="Main">
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+                <span class="visually-hidden">Menu</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+            </button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <i class="bi bi-list mobile-nav-toggle"></i>
-        </nav><!-- .navbar -->
+        </nav>
 
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+            <svg class="icon-moon" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+            <svg class="icon-sun" aria-hidden="true" viewBox="0 0 24 24" width="20" height="20"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
     </div>
-</header><!-- End Header -->
-
-<!-- ======= Hero Section ======= -->
-<div id="hero" class="hero route bg-image" style="background-image: url(assets/img/hero-bg.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-        <div class="table-cell">
-            <div class="container">
-                <!--<p class="display-6 color-d">Hello, world!</p>-->
-                <h1 class="hero-title mb-4">I am Janko Cvirn</h1>
-                <p class="hero-subtitle"><span class="typed"
-                                               data-typed-items="Android Developer, Freelancer, Consultant"></span></p>
-                <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-            </div>
-        </div>
-    </div>
-</div><!-- End Hero Section -->
+</header>
 
 <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
+    <section id="top" class="hero">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="box-shadow-full">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-5">
-                                        <div class="about-img">
-                                            <img src="assets/img/me.jpeg" class="img-fluid rounded b-shadow-a" alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-7">
-                                        <div class="about-info">
-                                            <p><span class="title-s">Name: </span> <span>Janko Cvirn</span></p>
-                                            <p><span class="title-s">Profile: </span> <span>Android developer</span></p>
-                                            <p><span class="title-s">Email: </span> <span>jankocvirn@gmail.com</span>
-                                            </p>
-                                            <p><span class="title-s">Phone: </span> <span>+385 (98) 204-791</span></p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skill-mf">
-                                    <p class="title-s">Skill</p>
-                                    <span>Android mobile</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%;"
-                                             aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>Android TV</span> <span class="pull-right">80%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 80%"
-                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>Android Automotive</span> <span class="pull-right">80%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 80%"
-                                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>Jetpack Compose</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%"
-                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>Store management</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%"
-                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>Kotlin/Java</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%"
-                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>Unit Testing</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%"
-                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>UI Testing</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%"
-                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>Git</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%"
-                                             aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="about-me pt-4 pt-md-0">
-                                    <div class="title-box-2">
-                                        <h5 class="title-left">
-                                            About me
-                                        </h5>
-                                    </div>
-                                    <p class="lead">
-                                        Over the past 11 years, I have gained extensive experience in Android
-                                        development, including proficiency in Java, Kotlin, and the Android SDK.
-                                        I am familiar with modern design patterns and development practices such as
-                                        MVVM, MVP, and Clean Architecture.
-                                    </p>
-                                    <p class="lead">
-                                        I have worked on a range of projects from small to large-scale, and I am
-                                        confident that my skills and experience can contribute to
-                                        the success of your project.
-                                        My approach to development is collaborative and iterative. I value
-                                        communication and feedback throughout the development process to ensure
-                                        that the final product meets your expectations. I am also comfortable working
-                                        independently and can take ownership of tasks as needed.
-                                    </p>
-                                    <p class="lead">
-                                        In addition to my technical skills, I have excellent problem-solving
-                                        skills, attention to detail, and a commitment to meeting deadlines.
-                                        I am always eager to learn new technologies and stay up-to-date with industry
-                                        trends.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <p class="eyebrow">Freelance · Zagreb, Croatia · Remote worldwide</p>
+            <h1>Janko Cvirn</h1>
+            <p class="hero-subtitle">Senior Android Developer · Jetpack Compose · Kotlin</p>
+            <p class="hero-lead">
+                I build and modernize native Android apps for phones, TV and cars, with clean architecture,
+                solid tests and a fast, AI-assisted workflow.
+            </p>
+            <div class="hero-actions">
+                <a class="btn btn-primary" href="mailto:jankocvirn@gmail.com?subject=Android%20project%20inquiry">Hire me</a>
+                <a class="btn btn-ghost" href="https://github.com/JankoCvirn" rel="me noopener">GitHub</a>
+                <a class="btn btn-ghost" href="https://www.linkedin.com/in/janko-cvirn-b8bb3b31/" rel="me noopener">LinkedIn</a>
             </div>
         </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 route">
+    <section id="about" class="section" aria-labelledby="about-title">
+        <div class="container about">
+            <picture class="about-photo">
+                <img src="assets/img/me.jpeg" width="576" height="576" alt="Janko Cvirn, Android developer" loading="eager" decoding="async">
+            </picture>
+            <div>
+                <h2 id="about-title" class="section-title">About me</h2>
+                <p>
+                    For more than 11 years I've been building Android apps in Kotlin and Java, from small
+                    consumer apps to large multi-module codebases for phones, Android TV and Android
+                    Automotive. These days I work Compose-first, with Coroutines and Flow, MVI/MVVM and Clean
+                    Architecture.
+                </p>
+                <p>
+                    I work collaboratively and iteratively: short feedback loops, clear communication and code
+                    your team can maintain after I'm gone. I'm equally comfortable owning a feature end to end
+                    on my own.
+                </p>
+                <p>
+                    I use AI tooling such as Claude Code in my daily workflow for refactoring, code review and
+                    test generation, so clients get well-tested work delivered faster.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats" aria-label="Experience at a glance">
+        <div class="container stats-grid">
+            <div class="stat"><span class="stat-num">11+</span><span class="stat-label">years of Android</span></div>
+            <div class="stat"><span class="stat-num">20+</span><span class="stat-label">Android projects</span></div>
+            <div class="stat"><span class="stat-num">3</span><span class="stat-label">form factors: mobile, TV, auto</span></div>
+        </div>
+    </section>
+
+    <section id="skills" class="section" aria-labelledby="skills-title">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="title-box text-center">
-                        <h3 class="title-a">
-                            Services
-                        </h3>
-                        <p class="subtitle-a">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        </p>
-                        <div class="line-mf"></div>
-                    </div>
+            <h2 id="skills-title" class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-group">
+                    <h3>Android &amp; UI</h3>
+                    <ul class="chips">
+                        <li>Jetpack Compose</li>
+                        <li>Material 3</li>
+                        <li>Compose Navigation</li>
+                        <li>Compose animations</li>
+                        <li>Android TV</li>
+                        <li>Android Automotive OS</li>
+                        <li>Android SDK &amp; Views</li>
+                    </ul>
                 </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-ico">
-                            <span class="ico-circle"><i class="bi bi-phone"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="s-title">Android Mobile</h2>
-                            <p class="s-description text-center">
-                                Native Android mobile development.
-                            </p>
-                        </div>
-                    </div>
+                <div class="skill-group">
+                    <h3>Language &amp; architecture</h3>
+                    <ul class="chips">
+                        <li>Kotlin</li>
+                        <li>Coroutines &amp; Flow</li>
+                        <li>Kotlin Multiplatform</li>
+                        <li>MVI / MVVM</li>
+                        <li>Clean Architecture</li>
+                        <li>Multi-module Gradle</li>
+                        <li>Java</li>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-ico">
-                            <span class="ico-circle"><i class="bi bi-tv"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="s-title">Android TV</h2>
-                            <p class="s-description text-center">
-                                Native Android TV development.
-                            </p>
-                        </div>
-                    </div>
+                <div class="skill-group">
+                    <h3>Data &amp; DI</h3>
+                    <ul class="chips">
+                        <li>Room</li>
+                        <li>Ktor</li>
+                        <li>Retrofit</li>
+                        <li>DataStore</li>
+                        <li>Koin</li>
+                        <li>Hilt</li>
+                        <li>Offline-first</li>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-ico">
-                            <span class="ico-circle"><i class="bi bi-car-front"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="s-title">Android automotive</h2>
-                            <p class="s-description text-center">
-                                Android automotive development.
-                            </p>
-                        </div>
-                    </div>
+                <div class="skill-group">
+                    <h3>Quality &amp; delivery</h3>
+                    <ul class="chips">
+                        <li>JUnit 5</li>
+                        <li>Turbine</li>
+                        <li>Compose UI testing</li>
+                        <li>Espresso</li>
+                        <li>CI/CD</li>
+                        <li>Git</li>
+                        <li>Google Play Console</li>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-ico">
-                            <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="s-title">Debug</h2>
-                            <p class="s-description text-center">
-                               Debug and fix android projects.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-ico">
-                            <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="s-title">Consult</h2>
-                            <p class="s-description text-center">
-                                Have an idea but need help?
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-box">
-                        <div class="service-ico">
-                            <span class="ico-circle"><i class="bi bi-cash-coin"></i></span>
-                        </div>
-                        <div class="service-content">
-                            <h2 class="s-title">Publish</h2>
-                            <p class="s-description text-center">
-                                Publish your application.
-                            </p>
-                        </div>
-                    </div>
+                <div class="skill-group skill-group-ai">
+                    <h3>AI-assisted development</h3>
+                    <ul class="chips">
+                        <li>Claude Code</li>
+                        <li>Agentic coding</li>
+                        <li>AI code review</li>
+                        <li>Automated refactoring</li>
+                        <li>Test generation</li>
+                        <li>Custom Claude Code skills</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section><!-- End Services Section -->
+    </section>
 
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
-        <div class="overlay-mf"></div>
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-sm-6 col-lg-6">
-                    <div class="counter-box counter-box pt-4 pt-md-0">
-                        <div class="counter-ico">
-                            <span class="ico-circle"><i class="bi bi-check"></i></span>
-                        </div>
-                        <div class="counter-num">
-                            <p data-purecounter-start="0" data-purecounter-end="20" data-purecounter-duration="1"
-                               class="counter purecounter"></p>
-                            <span class="counter-text">ANDROID PROJECTS</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-lg-6">
-                    <div class="counter-box pt-4 pt-md-0">
-                        <div class="counter-ico">
-                            <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
-                        </div>
-                        <div class="counter-num">
-                            <p data-purecounter-start="0" data-purecounter-end="11" data-purecounter-duration="1"
-                               class="counter purecounter"></p>
-                            <span class="counter-text">YEARS OF EXPERIENCE</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div><!-- End Counter Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
-             style="background-image: url(assets/img/overlay-bg.jpg)">
-        <div class="overlay-mf"></div>
+    <section id="services" class="section section-alt" aria-labelledby="services-title">
         <div class="container">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="contact-mf">
-                        <div id="contact" class="box-shadow-full">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="title-box-2 pt-4 pt-md-0">
-                                        <h5 class="title-left">
-                                            Get in Touch
-                                        </h5>
-                                    </div>
-                                    <div class="more-info">
-                                        <p class="lead">
-                                        </p>
-                                        <ul class="list-ico">
-                                            <li><span class="bi bi-geo-alt"></span> Skolska 11 , 10437 Rakitje-Bestovje , Croatia
-                                            </li>
-                                            <li><span class="bi bi-phone"></span>+385 (0)98 204-791</li>
-                                            <li><span class="bi bi-envelope"></span> jankocvirn@gmail.com</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <h2 id="services-title" class="section-title">Services</h2>
+            <p class="section-lead">From a new app to rescuing an existing one, on any Android screen.</p>
+            <ul class="services-grid">
+                <li class="card">
+                    <svg class="card-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="2"/><path d="M11 18h2"/></svg>
+                    <h3>Android mobile apps</h3>
+                    <p>Native Kotlin apps built with Jetpack Compose, from MVP to production.</p>
+                </li>
+                <li class="card">
+                    <svg class="card-icon" aria-hidden="true" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                    <h3>Android TV</h3>
+                    <p>Leanback and Compose for TV apps with proper D-pad focus and media playback.</p>
+                </li>
+                <li class="card">
+                    <svg class="card-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M5 17h14v-5l-2-5H7l-2 5z"/><path d="M5 12h14"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/></svg>
+                    <h3>Android Automotive</h3>
+                    <p>Apps for Android Automotive OS and Android for Cars that meet the platform's driver-distraction rules.</p>
+                </li>
+                <li class="card">
+                    <svg class="card-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M4 4v6h6"/><path d="M20 20v-6h-6"/><path d="M20 10A8 8 0 0 0 5.6 6.6L4 10M4 14a8 8 0 0 0 14.4 3.4L20 14"/></svg>
+                    <h3>Compose migration</h3>
+                    <p>Incremental migration from XML Views to Jetpack Compose and a modern, testable architecture.</p>
+                </li>
+                <li class="card">
+                    <svg class="card-icon" aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg>
+                    <h3>Debugging &amp; code audits</h3>
+                    <p>Crashes, ANRs, performance problems and architecture reviews, with a clear plan to fix them.</p>
+                </li>
+                <li class="card">
+                    <svg class="card-icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg>
+                    <h3>Consulting &amp; publishing</h3>
+                    <p>Technical advice for your idea, and getting your app through Google Play review and release.</p>
+                </li>
+            </ul>
         </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-</main><!-- End #main -->
+    <section id="contact" class="section" aria-labelledby="contact-title">
+        <div class="container contact">
+            <h2 id="contact-title" class="section-title">Let's work together</h2>
+            <p class="section-lead">Have an Android project, or need help with an existing app? Send me a message.</p>
+            <a class="btn btn-primary btn-lg" href="mailto:jankocvirn@gmail.com?subject=Android%20project%20inquiry">jankocvirn@gmail.com</a>
+            <ul class="contact-meta">
+                <li>Zagreb area, Croatia · available remotely</li>
+                <li><a href="https://github.com/JankoCvirn" rel="me noopener">github.com/JankoCvirn</a></li>
+                <li><a href="https://www.linkedin.com/in/janko-cvirn-b8bb3b31/" rel="me noopener">LinkedIn</a></li>
+            </ul>
+        </div>
+    </section>
 
-<!-- ======= Footer ======= -->
-<footer>
+</main>
+
+<footer class="site-footer">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="copyright-box">
-                    <p class="copyright">&copy; Copyright <strong>DevFolio</strong>. All Rights Reserved</p>
-                    <div class="credits">
-                        <!--
-                        All the links in the footer should remain intact.
-                        You can delete the links only if you purchased the pro version.
-                        Licensing information: https://bootstrapmade.com/license/
-                        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=DevFolio
-                      -->
-                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <p>© 2026 Janko Cvirn · Android developer</p>
     </div>
-</footer><!-- End  Footer -->
+</footer>
 
-<div id="preloader"></div>
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
-
-<!-- Vendor JS Files -->
-<script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-<script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-<script src="assets/vendor/typed.js/typed.umd.js"></script>
-<script src="assets/vendor/php-email-form/validate.js"></script>
-
-<!-- Template Main JS File -->
-<script src="assets/js/main.js"></script>
-
+<script src="assets/js/main.js" defer></script>
 </body>
-
 </html>
